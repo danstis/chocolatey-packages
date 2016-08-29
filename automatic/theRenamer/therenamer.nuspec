@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>therenamer</id>
+    <packageSourceUrl>https://github.com/danstis/choco-theRenamer</packageSourceUrl>
+    <owners>Dan Anstis</owners>
+    <title>theRenamer (Install)</title>
+    <version>7.69.20160812</version>
+    <authors>Alfred Toh</authors>
+    <summary>Automatically rename and organize your TV shows and Movies. Also moves them to your Media Library!</summary>
+    <description>Automatically rename and organize your TV shows and Movies. Also moves them to your Media Library!
+TV Series Episodes and Movie File Renamer works with IMDb.com, TV.com, theTVDB.com, EPGUIDES.com and MMA (Mixed Martial Arts) from WikiPedia.
+
+theRenamer renames your TV or Movie files into a neat and orderly format.....and adds in the TV show episodes titles!
+ 
+From this: [vd-mux-ita]The.Unit.1x01.Piromane.ITA.DVDMux.[colombo-bt.org].avi
+To this: The Unit.1x01.First Responders.avi
+......... in just 1 simple Drag and Drop motion.
+    </description>
+    <projectUrl>http://www.therenamer.com/</projectUrl>
+    <tags>therenamer rename admin</tags>
+    <copyright>Alfred Toh</copyright>
+    <licenseUrl>http://www.therenamer.com/forum/viewtopic.php?t=1156</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://s3.amazonaws.com/chocolateyIcons/theRenamer_128.png</iconUrl>
+    <dependencies>
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
