@@ -12,29 +12,30 @@ environment:
   # au job parameters
   au_timeout: 100
   au_threads: 10
-  au_push: true
+  au_push: false
   au_force: false
 
   # Github credentials - used to save result to gist and to commit pushed packages to the git repository
-  github_user: YOUR_GITHUB_USERNAME_HERE
+  github_user: danstis
   github_pass:
-    secure: YOUR_PASSWORD_OR_2FA_AUTH_TOKEN_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
-  github_user_repo: 'YOUR_GITHUB_USERNAME_HERE/chocolatey-packages' #https://github.com/chocolatey/chocolatey-packages-template is 'chocolatey/chocolatey-packages-template'
+    secure: D7KUkw34vnNqgUYrWSk68Q== #https://ci.appveyor.com/tools/encrypt
+  github_user_repo: 'danstis/chocolatey-packages'
 
   # Email credentials - for error notifications
-  mail_user: YOUR_EMAIL_ACCOUNT
+  mail_user:
+    secure: PFHrjC0ZUQUveW5y3TF3y82qHG+g8uKK1d93COVocZs=
   mail_pass:
-    secure: YOUR_EMAIL_PASSWORD_HERE_ENCRYPTED_STRING #https://ci.appveyor.com/tools/encrypt
+    secure: EpzJVeDzrIeaDHDN4P9Y6eLsDbsmrzqJrVjYVeuEzTk= #https://ci.appveyor.com/tools/encrypt
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
 
   # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
-  gist_id: YOUR_GIST_ID_CREATE_GIST_SAVE_ID_HERE
+  gist_id: 38657d277f926c6cb83b5dde2911acca
 
   # Chocolatey API key - to push updated packages
   api_key:
-    secure: YOUR_CHOCO_API_KEY_HERE_ENCRYPTED_STRING # https://ci.appveyor.com/tools/encrypt
+    secure: iNMxtYIBsXBiXFvLROnort/ceVDsrAVGXa6QIDznzKiBC+yCQmUl3JH6ghAwXAXh # https://ci.appveyor.com/tools/encrypt
 
 init:
 - git config --global user.email "chocolatey@realdimensions.net"
