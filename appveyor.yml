@@ -38,8 +38,8 @@ environment:
     secure: iNMxtYIBsXBiXFvLROnort/ceVDsrAVGXa6QIDznzKiBC+yCQmUl3JH6ghAwXAXh # https://ci.appveyor.com/tools/encrypt
 
 init:
-- git config --global user.email "chocolatey@realdimensions.net"
-- git config --global user.name "Chocolatey"
+- git config --global user.email "appveyor@bsod.co.nz"
+- git config --global user.name "AppVeyor"
 
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
