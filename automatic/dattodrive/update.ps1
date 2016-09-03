@@ -3,9 +3,9 @@
 import-module au
 
 function global:au_GetLatest{
-    $downloadPage = Invoke-WebRequest -Uri 'http://www.therenamer.com/'
-    $version = $downloadPage.Content | Select-String -Pattern "latest version:.*?([\d\.]{3,})" | %{$_.Matches.Groups[1].Value}
-    $downloadUrl = $downloadPage.Content | Select-String -Pattern "<a href=`"(.*?)`".*?title=`"Download theRenamer`"" | %{$_.Matches.Groups[1].Value}
+    $downloadPage = Invoke-WebRequest -Uri 'https://download.dattodrive.com/'
+    $version = $downloadPage.Content | Select-String -Pattern "href=`"/win/dattodrive-([\d\.]*?)-.*?exe" | %{$_.Matches.Groups[1].Value}
+    $downloadUrl = "https://download.dattodrive.com" + ($downloadPage.Content | Select-String -Pattern "href=`"(/win/.*?)`".*?Windows" | %{$_.Matches.Groups[1].Value})
 
     return @{ URL32 = $downloadUrl; Version = $version }
 }
@@ -16,7 +16,7 @@ function global:au_SearchReplace{
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
-        'therenamer.nuspec' = @{
+        'dattodrive.nuspec' = @{
             "<version>\s*(.*)<\/version>"    = "<version>$($Latest.Version)</version>"
         }
      }

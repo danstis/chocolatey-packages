@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dattodrive</id>
+    <version>2.1.1.623</version>
+    <packageSourceUrl>https://github.com/danstis/chocolatey-packages</packageSourceUrl>
+    <owners>Dan Anstis</owners>
+    <title>dattodrive (Install)</title>
+    <authors>Datto Inc.</authors>
+    <projectUrl>https://download.dattodrive.com/</projectUrl>
+    <iconUrl>https://help.dattodrive.com/hc/en-us/article_attachments/208892508/state-sync-128.png</iconUrl>
+    <copyright>2016 Datto Inc.</copyright>
+    <tags>dattodrive admin</tags>
+    <summary>Sync client for the cloud storage solution DattoDrive by Datto Inc.</summary>
+    <description>Allows for sync of files from DattoDrive to a Windows PC.
+Works with Windows 7 and above.</description>
+    <dependencies>
+      <dependency id="chocolatey-uninstall.extension" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
