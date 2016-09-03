@@ -17,7 +17,7 @@ function global:au_SearchReplace{
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
         }
         'therenamer.nuspec' = @{
-            "(<version>\s*)(.*)<\/version>"    = "`$1'$($Latest.Version)'"
+            "<version>\s*(.*)<\/version>"    = "<version>$($Latest.Version)</version>"
         }
      }
 }
