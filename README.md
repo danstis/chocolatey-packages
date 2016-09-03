@@ -4,7 +4,8 @@
 [Update status](https://gist.github.com/danstis/38657d277f926c6cb83b5dde2911acca)
 
 ## Packages included
+* dattodrive - Sync client for DattoDrive.
 * therenamer - Tool to rename media files.
 
 ### Version
-* 20160829
+* 20160903
