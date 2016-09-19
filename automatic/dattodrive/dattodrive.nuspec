@@ -6,15 +6,17 @@
     <version>2.1.1.623</version>
     <packageSourceUrl>https://github.com/danstis/chocolatey-packages</packageSourceUrl>
     <owners>Dan Anstis</owners>
-    <title>dattodrive (Install)</title>
+    <title>Datto Drive</title>
     <authors>Datto Inc.</authors>
-    <projectUrl>https://download.dattodrive.com/</projectUrl>
+    <projectUrl>http://www.datto.com/drive</projectUrl>
     <iconUrl>https://help.dattodrive.com/hc/en-us/article_attachments/208892508/state-sync-128.png</iconUrl>
     <copyright>2016 Datto Inc.</copyright>
     <tags>dattodrive admin</tags>
     <summary>Sync client for the cloud storage solution DattoDrive by Datto Inc.</summary>
     <description>Allows for sync of files from DattoDrive to a Windows PC.
 Works with Windows 7 and above.</description>
+    <docsUrl>http://www.datto.com/resources</docsUrl>
+    <mailingListUrl>http://www.datto.com/support</mailingListUrl>
     <dependencies>
       <dependency id="chocolatey-uninstall.extension" />
     </dependencies>
