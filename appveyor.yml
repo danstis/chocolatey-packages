@@ -12,7 +12,7 @@ environment:
   # au job parameters
   au_timeout: 100
   au_threads: 10
-  au_push: false
+  au_push: true
   au_force: false
 
   # Github credentials - used to save result to gist and to commit pushed packages to the git repository
@@ -44,6 +44,7 @@ init:
 install:
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
+- ps: $Env:Gist_Id
 - SET PATH=C:\Ruby21-x64\bin;%PATH%
 - ruby -v
 - gem install gist --no-ri --no-rdoc
