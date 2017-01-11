@@ -8,4 +8,4 @@
 * therenamer - Tool to rename media files.
 
 ### Version
-* 20160903
+* 20170111
