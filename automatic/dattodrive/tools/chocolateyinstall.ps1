@@ -2,8 +2,8 @@
 
 $packageName= 'dattodrive'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.dattodrive.com/win/dattodrive-2.1.1.623-setup.exe'
-$checksum   = '5f167f13dca2172045c719b06629e3af00fa16f1d3a05bb5406a014b04c7b7c9'
+$url        = 'https://download.dattodrive.com/win/single/dattodrive-2.2.4.859-setup.exe'
+$checksum   = '489516c802c9a635f67c0ef92fee48ff6218e1613e9a9ef33d13592990e39dec'
 
 $packageArgs = @{
   packageName   = $packageName

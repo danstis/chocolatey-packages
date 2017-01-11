@@ -28,7 +28,7 @@ $options = @{
             }
            } else {}
 
-    Gist_ID = $Env:gist_id
+    Gist_ID = $env:gist_id
 
     Script = {
         param($Phase, $Info)
