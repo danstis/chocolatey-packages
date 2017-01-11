@@ -10,6 +10,7 @@ branches:
 
 environment:
   # au job parameters
+  au_version: 2016.8.15
   au_timeout: 100
   au_threads: 10
   au_push: true
@@ -53,7 +54,7 @@ install:
     "machine github.com", "login $Env:github_user", "password $Env:github_pass" | Out-File ~/_netrc -Encoding ascii
     Install-PackageProvider -Name NuGet -Force
     Set-PSRepository -Name PSGallery -InstallationPolicy Trusted
-    Install-Module au -Scope CurrentUser
+    Install-Module au -Scope CurrentUser -MaximumVersion $env:au_version
     Get-Module au -ListAvailable | select Name, Version
 
 build_script:
@@ -69,6 +70,6 @@ artifacts:
 notifications:
 - provider: Email
   to: $(mail_user)
-  on_build_success: false
+  on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
