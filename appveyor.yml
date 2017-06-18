@@ -19,7 +19,7 @@ environment:
   # Github credentials - used to save result to gist and to commit pushed packages to the git repository
   github_user: danstis
   github_pass:
-    secure: D7KUkw34vnNqgUYrWSk68Q== #https://ci.appveyor.com/tools/encrypt
+    secure: j1j6j2uYxJt/NP7PLEJq2P7KcThvAv3SxYO+m5CNdLI= #https://ci.appveyor.com/tools/encrypt
   github_user_repo: 'danstis/chocolatey-packages'
 
   # Email credentials - for error notifications
