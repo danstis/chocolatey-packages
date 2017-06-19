@@ -6,6 +6,3 @@
 ## Packages included
 * dattodrive - Sync client for DattoDrive.
 * therenamer - Tool to rename media files.
-
-### Version
-* 20170111
